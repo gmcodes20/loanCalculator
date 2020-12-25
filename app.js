@@ -1,3 +1,6 @@
+
+
+
 // Listen f0r the submit
 document.getElementById('loan-form').addEventListener('submit', function (e) {
   // Hide result
@@ -21,6 +24,7 @@ function calculateResult() {
   const monthlyPayment = document.getElementById('monthly-payment');
   const totalPayment = document.getElementById('total-payment');
   const totalInterest = document.getElementById('total-interest');
+
 
   const principal = parseFloat(amount.value);
   const calculatedInterest = parseFloat(interest.value) / 100 / 12;
@@ -94,3 +98,4 @@ function clear(e) {
   document.querySelector('.loading').style.display = 'none';
   e.preventDefault()
 }
+
